@@ -1,0 +1,19 @@
+html
+    head 
+        title='Login'
+        style(type="text/css").
+            .form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+        body 
+            div
+                h2=message 
+                form( class='form' id='loginForm')
+                    label(name="nombre") Nombre: 
+                    input(name="name") 
+                    button(type="submit") Enviar
+
+                    //onclick="window.location.href='/'"
+        script(type='text/javascript' src='../public/js/register.js')
